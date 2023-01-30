@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: {
+        size: 20px;
+        family: 'Lato', sans-serif;
+    }
+
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(24, 24, 25);
+    color: aliceblue;
+}
+
+
+
+/*
+
+
+.parallax-wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    height: 100vh;
+}
+
+// ----------parallax scale calc------
+//    1 + ((z-transform * -1) / perspective)
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    background-color: rgb(24, 24, 25);
+    z-index: 12;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+
+        li {
+            list-style: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center center;
+
+    h1 {
+        text-transform: uppercase;
+
+        font: {
+            size: 4rem;
+            weight: 900;
+        }
+    }
+}
+
+img {
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    &:nth-of-type(2) {
+        transform: translateZ(-20px) scale(3);
+        transform-style: preserve-3d;
+    }
+}
+
+.img-1 {
+    background-image: url("/resourses/images/dark-forest.jpg");
+    position: relative;
+    background-attachment: fixed;
+
+    &::after {
+        content: "jade & andy";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        color: aliceblue;
+        display: grid;
+        place-content: center;
+        text-transform: uppercase;
+
+        font: {
+            size: 3rem;
+            weight: 900;
+        }
+    }
+}
+
+.img-2 {
+    background-image: url("/resourses/images/woman-image.jpg"); 
+}
+
+.img-3 {
+    background-image: url("/resourses/images/girl-gun.jpg");
+}
+
+
+*/
+
+
+
+
+.wrapper_outer{
+    height: 100vh;
+    overflow: hidden;
+   
+}
+
+.wrapper {
+    height: 100%;
+    overflow-x: hidden;
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+
+.parallax_section {
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    // transform-style: preserve-3d;
+    // perspective: 1px;
+    // overflow-x: hidden;
+
+}
+
+.parallax {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    transform: transLate3d(0,0,-1px) scale(2);
+}
+
+.bg1 {
+    background-image: url("/resourses/images/dark-artsy.jpg");
+}
+
+.bg2 {
+    background-image: url("/resourses/images/dark-forest.jpg");
+}
+
+.parallax_section h2 {
+    font-size: 120px;
+    text-align: center;
+    text-transform: uppercase;
+}
