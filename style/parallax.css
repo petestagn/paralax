@@ -10,8 +10,6 @@ html {
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
   background-color: rgb(24, 24, 25);
   color: aliceblue;
 }
@@ -162,7 +160,7 @@ img {
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  transform: transLate3d(0, 0, -1px) scale(2);
+  transform: transLateZ(-2px) scale(1.5);
 }
 
 .bg1 {
