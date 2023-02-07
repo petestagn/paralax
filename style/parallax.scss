@@ -13,8 +13,8 @@ html {
 }
 
 body {
-    // width: 100%;
-    // min-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     background-color: rgb(24, 24, 25);
     color: aliceblue;
 }
@@ -158,10 +158,10 @@ img {
     justify-content: center;
     width: 100vw;
     position: relative;
-    overflow: hidden;
-    // transform-style: preserve-3d;
-    // perspective: 1px;
-    // overflow-x: hidden;
+    // overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 100px;
+    overflow-x: hidden;
 
 }
 
@@ -176,16 +176,16 @@ img {
     justify-content: center;
     align-items: center;
     min-height: 100%;
-    transform: transLateZ(-2px) scale(1.5);
+    transform: transLateZ(-100px) scale(2);
 }
 
-.bg1 {
-    background-image: url("/resourses/images/dark-artsy.jpg");
-}
+// .bg1 {
+//     background-image: url("/resourses/images/dark-artsy.jpg");
+// }
 
-.bg2 {
-    background-image: url("/resourses/images/dark-forest.jpg");
-}
+// .bg2 {
+//     background-image: url("/resourses/images/dark-forest.jpg");
+// }
 
 .parallax_section h2 {
     font-size: 120px;

@@ -10,6 +10,8 @@ html {
 }
 
 body {
+  width: 100%;
+  min-height: 100vh;
   background-color: rgb(24, 24, 25);
   color: aliceblue;
 }
@@ -146,7 +148,9 @@ img {
   justify-content: center;
   width: 100vw;
   position: relative;
-  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 100px;
+  overflow-x: hidden;
 }
 
 .parallax {
@@ -160,15 +164,7 @@ img {
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  transform: transLateZ(-2px) scale(1.5);
-}
-
-.bg1 {
-  background-image: url("/resourses/images/dark-artsy.jpg");
-}
-
-.bg2 {
-  background-image: url("/resourses/images/dark-forest.jpg");
+  transform: transLateZ(-100px) scale(2);
 }
 
 .parallax_section h2 {
