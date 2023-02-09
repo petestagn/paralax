@@ -5,11 +5,13 @@
 }
 
 html {
+    height: 100vh;
+    overflow: hidden;
+
     font: {
         size: 20px;
         family: 'Lato', sans-serif;
     }
-
 }
 
 body {
@@ -17,6 +19,10 @@ body {
     min-height: 100vh;
     background-color: rgb(24, 24, 25);
     color: aliceblue;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 
@@ -135,7 +141,7 @@ img {
 */
 
 
-
+/*
 
 .wrapper_outer{
     height: 100vh;
@@ -191,4 +197,33 @@ img {
     font-size: 120px;
     text-align: center;
     text-transform: uppercase;
+}
+
+*/
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+
+    .text {
+        top: 30%;
+        left: 50%;
+        position: absolute;
+        transform: scale(1, 1.1) translate(-50%, 10%);
+        font-size: 15vw;
+        font-weight: bolder;
+    }
+}
+
+.section1::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("/resourses/images/dark-artsy.jpg") top center;
+    background-size: cover;
+    // inset: 0;
+    transform: translateZ(-1px) scale(2);
 }
