@@ -1,5 +1,7 @@
 :root {
   --bck-grnd-clr: rgb(24, 24, 25);
+  --primary-clr: aliceblue;
+  --hover-clr: aqua;
   --timing-func: 300ms;
 }
 
@@ -10,20 +12,21 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 16px;
   font-family: "Lato", sans-serif;
 }
 
 body {
   background-color: var(--bck-grnd-clr);
-  color: aliceblue;
+  color: var(--primary-clr);
 }
 
 .p-wrap {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   perspective: 10px;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -60,10 +63,26 @@ header nav ul li {
   list-style: none;
   text-transform: capitalize;
   cursor: pointer;
+  position: relative;
   transition: color var(--timing-func) ease-in-out;
 }
 header nav ul li:hover {
-  color: aqua;
+  color: var(--hover-clr);
+}
+header nav ul li::after {
+  content: "";
+  position: absolute;
+  height: 1.3px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--hover-clr);
+  transition: transform var(--timing-func) ease-in;
+  transform-origin: center;
+}
+header nav ul li:hover::after {
+  transform: scale(1);
 }
 header .header-title {
   position: absolute;
@@ -100,7 +119,7 @@ section > h1 {
   align-items: center;
   background-position: center;
   background-size: cover;
-  transform: translateZ(-5px), scale(1.5);
+  transform: translateZ(-5px) scale(1);
   transform-style: preserve-3d;
 }
 .p-section > h1 {
