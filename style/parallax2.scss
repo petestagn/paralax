@@ -130,6 +130,8 @@ header {
 section {
     height: 50vh;
     @include flx-center;
+    position: relative;
+    z-index: 4;
 
     > h1 {
         text-transform: uppercase;

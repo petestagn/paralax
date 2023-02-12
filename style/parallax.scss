@@ -86,9 +86,8 @@ body {
     left: 0;
     background-image: url("/resourses/images/forest.jpg");
     position: absolute;
-    z-index: -1;
 
     // parallax
     transform: translateZ(-1px) scale(2);
-    z-index: -1;
+    // z-index: -1;
 }

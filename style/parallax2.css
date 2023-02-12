@@ -110,6 +110,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 4;
 }
 section > h1 {
   text-transform: uppercase;
