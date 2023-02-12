@@ -29,13 +29,15 @@ body {
   perspective: 10px;
   overflow-y: auto;
   overflow-x: hidden;
+  transform-style: preserve-3d;
 }
 
 header {
   height: 100vh;
-  background-image: url("/resourses/images/dark-forest.jpg");
+  background-image: url("../resourses/images/dark-artsy.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 header nav {
@@ -127,7 +129,6 @@ section > h1 {
   inset: 0;
   background-position: center;
   background-size: cover;
-  z-index: -1;
 }
 .p-section:nth-of-type(1)::before {
   background-image: url("../resourses/images/swans.jpg");
