@@ -47,7 +47,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding-top: 20vh;
-  background-image: url("/resourses/images/dark-artsy.jpg");
+  background-image: url("../resourses/images/dark-artsy.jpg");
   position: relative;
   z-index: 2;
 }
@@ -65,7 +65,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background-image: url("/resourses/images/forest.jpg");
+  background-image: url("../resourses/images/forest.jpg");
   position: absolute;
   transform: translateZ(-1px) scale(2);
 }/*# sourceMappingURL=parallax.css.map */
