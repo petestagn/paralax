@@ -132,6 +132,8 @@ section {
     @include flx-center;
     position: relative;
     z-index: 4;
+    
+    // remember to set background clr for parallax
     background-color: var(--bck-grnd-clr);
 
     > h1 {
@@ -156,6 +158,8 @@ section {
         background-position: center;
         background-size: cover;
         z-index: -3;
+       
+    //    resizes for parallax effect
         transform: translateZ(-5px) scale(1.5);
     }
     &:nth-of-type(1)::before {
